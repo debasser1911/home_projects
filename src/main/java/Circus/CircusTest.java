@@ -21,12 +21,14 @@ public class CircusTest {
         RopeWalker r3 = new RopeWalker("RopeWalker_3_name", "RopeWalker_3_surName");
         circus.hireArtist(r3);
 
-        circus.showMenu();
+
+        /*circus.showMenu();*/
+        System.out.println(circus.getSize());
 
         //test hireArtist method
-/*        int expected1 = 6;
+       int expected1 = 6;
         int actual1 = circus.getSize();
-        System.out.format("Method hireArtist - %s, expected - %d, actual - %d\n\n", expected1 == actual1, expected1, actual1);*/
+        System.out.format("Method hireArtist - %s, expected - %d, actual - %d\n\n", expected1 == actual1, expected1, actual1);
 
 
     }

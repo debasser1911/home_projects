@@ -84,4 +84,24 @@ public class Circus {
         }
 
     }
+
+    public void fillArtist() {
+        Circus circus = new Circus();
+        Acrobat a1 = new Acrobat("Acrobat_1_name", "Acrobat_1_surName");
+        circus.hireArtist(a1);
+        Acrobat a2 = new Acrobat("Acrobat_2_name", "Acrobat_2_surName");
+        circus.hireArtist(a2);
+        RopeWalker r1 = new RopeWalker("RopeWalker_1_name", "RopeWalker_1_surName");
+        circus.hireArtist(r1);
+        RopeWalker r2 = new RopeWalker("RopeWalker_2_name", "RopeWalker_2_surName");
+        circus.hireArtist(r2);
+        Acrobat a3 = new Acrobat("Acrobat_3_name", "Acrobat_3_surName");
+        circus.hireArtist(a3);
+        RopeWalker r3 = new RopeWalker("RopeWalker_3_name", "RopeWalker_3_surName");
+        circus.hireArtist(r3);
+    }
+
+    public int calc(){
+        return 10;
+    }
 }

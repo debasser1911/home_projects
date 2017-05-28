@@ -9,12 +9,13 @@ public class Menu {
     public void showMenu() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         //todo вписать количество пунктов
-        System.out.printf("Привет! Я - меню управления цирков. Выбери пункт меню: \n1. Первый пункт\n2. Второй пункт\n3. Третий пункт");
+        System.out.printf("Привет! Я - меню управления цирком. Выбери пункт меню: \n1. Первый пункт\n2. Второй пункт\n3. Третий пункт");
         int menuPoint = Integer.parseInt(br.readLine());
 
         switch (menuPoint) {
             case 1:
-                System.out.println("Первый пункт");
+                System.out.println("Посмотреть список артистов");
+
                 break;
             case 2:
                 System.out.println("Второй пункт");
@@ -26,6 +27,5 @@ public class Menu {
 
 
     }
-
 }
 

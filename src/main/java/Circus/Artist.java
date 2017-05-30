@@ -1,7 +1,7 @@
 package Circus;
 
 
-public class Artist {
+public abstract class Artist {
     private String name;
     private String surName;
     private double earnedMoney;
@@ -76,12 +76,7 @@ public class Artist {
         return surName != null ? surName.equals(artist.surName) : artist.surName == null;
     }
 
+    public abstract void perform();
 
-    /*    public void showArtists() {
-
-        for (int i = 0; i < artists.size(); i++) {
-            System.out.println(artists.get(i));
-        }
-    }*/
 
 }

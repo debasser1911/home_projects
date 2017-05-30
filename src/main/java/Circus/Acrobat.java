@@ -3,7 +3,7 @@ package Circus;
 /**
  * Created by DeBasser on 11.05.2017.
  */
-public class Acrobat extends Artist implements Perform {
+public class Acrobat extends Artist{
 
     public Acrobat(String name, String surName) {
         super(name, surName);

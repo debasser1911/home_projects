@@ -8,9 +8,9 @@ import java.io.IOException;
 public class CircusTest {
     public static void main(String[] args) throws IOException {
         Circus circus = new Circus();
-        Acrobat a1 = new Acrobat("Acrobat_1_name", "Acrobat_1_surName");
+        Acrobat a1 = new Acrobat("Bob", "Fisher");
         circus.hireArtist(a1);
-        Acrobat a2 = new Acrobat("Acrobat_2_name", "Acrobat_2_surName");
+        Acrobat a2 = new Acrobat("Tom", "Taylor");
         circus.hireArtist(a2);
         RopeWalker r1 = new RopeWalker("RopeWalker_1_name", "RopeWalker_1_surName");
         circus.hireArtist(r1);
@@ -19,16 +19,19 @@ public class CircusTest {
         Acrobat a3 = new Acrobat("Acrobat_3_name", "Acrobat_3_surName");
         circus.hireArtist(a3);
         RopeWalker r3 = new RopeWalker("RopeWalker_3_name", "RopeWalker_3_surName");
-        circus.hireArtist(r3);
+/*        circus.hireArtist(r3);
+        circus.performAllArtists();
 
+        circus.paySalary();*/
 
-        /*circus.showMenu();*/
-        System.out.println(circus.getSize());
+/*        System.out.println(circus.showArtists());
 
         //test hireArtist method
-       int expected1 = 6;
+        int expected1 = 6;
         int actual1 = circus.getSize();
-        System.out.format("Method hireArtist - %s, expected - %d, actual - %d\n\n", expected1 == actual1, expected1, actual1);
+        System.out.format("Method hireArtist - %s, expected - %d, actual - %d\n\n", expected1 == actual1, expected1, actual1);*/
+
+circus.showMenu(circus);
 
 
     }

@@ -33,7 +33,8 @@ public class CircusTest {
         System.out.format("Method hireArtist - %s, expected - %d, actual - %d\n\n", expected1 == actual1, expected1, actual1);*/
 
 circus.showMenu(circus);
-        
+
+
 
 
 

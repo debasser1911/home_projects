@@ -24,6 +24,7 @@ public class Circus {
 
     public String showArtists() {
         StringBuilder tmp = new StringBuilder();
+        int index = 1;
         for (int i = 0; i < artists.size(); i++) {
             if (artists.get(i) != null) {
                 tmp.append(artists.get(i).toString()).append("\n");
@@ -64,41 +65,53 @@ public class Circus {
         }
     }
 
-    public void showMenu(Circus circus) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        //todo вписать количество пунктов
-        System.out.printf("Привет! Я - меню управления блядским цирком. Выбери пункт меню: \n1. Посмотреть список артистов\n2. Второй пункт\n3. Третий пункт\n4. Выход\n");
-        System.out.print("Введите пункт меню: ");
-        int menuPoint = Integer.parseInt(br.readLine());
-        String separator = "================================";
-
-            switch (menuPoint) {
-                case 1:
-                    System.out.println("Посмотреть список артистов");
-                    System.out.println(circus.showArtists());
-                    System.out.println(separator);
-                    showMenu(circus);
-                    break;
-                case 2:
-                    System.out.println("Второй пункт");
-                    showMenu(circus);
-                    break;
-                case 3:
-                    System.out.println("Третий пункт");
-                    showMenu(circus);
-                    break;
-                case 4:
-                    System.out.println("Выход");
-                    break;
-            }
-
-
-    }
-
     public void performAllArtists() {
         for (int i = 0; i < artists.size(); i++) {
             artists.get(i).perform();
         }
+        System.out.println("Все артисты выступили");
     }
+
+    public void showMenu(Circus circus) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        //todo вписать количество пунктов
+        System.out.printf("Привет! Я - меню управления блядским цирком. Выбери пункт меню: \n1. Посмотреть список артистов\n2. Отчёт о выступлениях\n3. Начать выступление\n4. Выплатить зар. плату\n5. Выход\n");
+        System.out.print("Введите пункт меню: ");
+        int menuPoint = Integer.parseInt(br.readLine());
+        String separator = "================================";
+
+        switch (menuPoint) {
+            case 1:
+                System.out.println("Посмотреть список артистов");
+                System.out.println(circus.showArtists());
+                System.out.println(separator);
+                System.out.println();
+                showMenu(circus);
+                break;
+            case 2:
+                System.out.println("Отчёт о выступлениях");
+                System.out.println(circus.performanceReport());
+                System.out.println();
+                showMenu(circus);
+                break;
+            case 3:
+                System.out.println("Начать выступление");
+                circus.performAllArtists();
+                System.out.println();
+                showMenu(circus);
+                break;
+            case 4:
+                System.out.println("Выплатить зар. плату");
+                circus.paySalary();
+                System.out.println();
+                showMenu(circus);
+            case 5:
+                System.out.println("Выход");
+                break;
+        }
+
+
+    }
+
 
 }

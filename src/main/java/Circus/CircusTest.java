@@ -13,13 +13,13 @@ public class CircusTest {
         circus.hireArtist(a1);
         Acrobat a2 = new Acrobat("Tom", "Taylor");
         circus.hireArtist(a2);
-        RopeWalker r1 = new RopeWalker("RopeWalker_1_name", "RopeWalker_1_surName");
+        RopeWalker r1 = new RopeWalker("Fred", "RopeWalker_1_surName");
         circus.hireArtist(r1);
-        RopeWalker r2 = new RopeWalker("RopeWalker_2_name", "RopeWalker_2_surName");
+        RopeWalker r2 = new RopeWalker("Mike", "RopeWalker_2_surName");
         circus.hireArtist(r2);
-        Acrobat a3 = new Acrobat("Acrobat_3_name", "Acrobat_3_surName");
+        Acrobat a3 = new Acrobat("Tommy", "Acrobat_3_surName");
         circus.hireArtist(a3);
-        RopeWalker r3 = new RopeWalker("RopeWalker_3_name", "RopeWalker_3_surName");
+        RopeWalker r3 = new RopeWalker("John", "RopeWalker_3_surName");
 /*        circus.hireArtist(r3);
         circus.performAllArtists();
 

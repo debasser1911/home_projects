@@ -75,7 +75,7 @@ public class Circus {
     public void showMenu(Circus circus) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         //todo вписать количество пунктов
-        System.out.printf("Привет! Я - меню управления блядским цирком. Выбери пункт меню: \n1. Посмотреть список артистов\n2. Отчёт о выступлениях\n3. Начать выступление\n4. Выплатить зар. плату\n5. Выход\n");
+        System.out.printf("Привет! Я - меню управления цирком. Выбери пункт меню: \n1. Посмотреть список артистов\n2. Отчёт о выступлениях\n3. Начать выступление\n4. Выплатить зар. плату\n5. Выход\n");
         System.out.print("Введите пункт меню: ");
         int menuPoint = Integer.parseInt(br.readLine());
         String separator = "================================";

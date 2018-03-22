@@ -9,20 +9,33 @@ import java.io.IOException;
 public class CircusTest {
     public static void main(String[] args) throws IOException {
         Circus circus = new Circus();
-        Acrobat a1 = new Acrobat("Вася", "Пупкин");
+        Acrobat a1 = new Acrobat("Bob", "Fisher");
         circus.hireArtist(a1);
-        Acrobat a2 = new Acrobat("Егор", "Сидоров");
+        Acrobat a2 = new Acrobat("Tom", "Taylor");
         circus.hireArtist(a2);
-        RopeWalker r1 = new RopeWalker("Вася", "Жопин");
+        RopeWalker r1 = new RopeWalker("Fred", "RopeWalker_1_surName");
         circus.hireArtist(r1);
-        RopeWalker r2 = new RopeWalker("Петя", "Мухин");
+        RopeWalker r2 = new RopeWalker("Mike", "RopeWalker_2_surName");
         circus.hireArtist(r2);
-        Acrobat a3 = new Acrobat("Лера", "Жопина");
+        Acrobat a3 = new Acrobat("Tommy", "Acrobat_3_surName");
         circus.hireArtist(a3);
-        RopeWalker r3 = new RopeWalker("Сёмен", "Петров");
+        RopeWalker r3 = new RopeWalker("John", "RopeWalker_3_surName");
+/*        circus.hireArtist(r3);
+        circus.performAllArtists();
 
+        circus.paySalary();*/
+
+/*        System.out.println(circus.showArtists());
+
+        //test hireArtist method
+        int expected1 = 6;
+        int actual1 = circus.getSize();
+        System.out.format("Method hireArtist - %s, expected - %d, actual - %d\n\n", expected1 == actual1, expected1, actual1);*/
 
 circus.showMenu(circus);
+
+
+
 
 
     }

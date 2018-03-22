@@ -20,6 +20,6 @@ public class Animal {
     }
 
     public void sayHello(){
-        System.out.println("Hello! My name is " + name);
+        System.out.println("Hello! I am a " + getClass() + " and My name is " + name);
     }
 }

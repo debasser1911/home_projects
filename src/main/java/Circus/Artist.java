@@ -59,13 +59,11 @@ public abstract class Artist {
 
     @Override
     public String toString() {
-        return "Artist{" +
-                "name='" + name + '\'' +
-                ", surName='" + surName + '\'' +
-                ", earnedMoney=" + earnedMoney +
-                ", numOfPerformances=" + numOfPerformances +
-                ", extraBonusForRisk=" + extraBonusForRisk +
-                '}';
+        return
+                name + " " + surName +
+                ", заработано денег - " + earnedMoney +
+                ", количество выступлений - " + numOfPerformances +
+                ", бонус за риск - " + extraBonusForRisk;
     }
 
     @Override

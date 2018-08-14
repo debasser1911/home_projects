@@ -1,7 +1,7 @@
+package main.java;
+
 import LearnPackage.Calculator.Calculator;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.*;
 import org.junit.rules.TestRule;
 import org.junit.rules.Timeout;
 
@@ -12,7 +12,7 @@ public class CalculatorTest {
     private Calculator calculator;
 
     @Rule
-    public TestRule timeout = new Timeout(10);
+    public TestRule timeout = new Timeout(20);
 
     @Before
     public void setup() {

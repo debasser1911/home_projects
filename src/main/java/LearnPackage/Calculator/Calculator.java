@@ -1,4 +1,4 @@
-package LearnPackage;
+package LearnPackage.Calculator;
 
 public class Calculator implements Parser<String, Integer>{
 

@@ -1,4 +1,4 @@
-package LearnPackage;
+package LearnPackage.Calculator;
 
 public class Model {
     private final String operandFirst;

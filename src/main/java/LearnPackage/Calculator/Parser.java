@@ -1,4 +1,4 @@
-package LearnPackage;
+package LearnPackage.Calculator;
 
 public interface Parser<In, Out> {
 

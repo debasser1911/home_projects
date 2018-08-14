@@ -5,7 +5,7 @@ public class ModelParserImpl implements ModelParser {
 
     @Override
     public Model parse(String s) {
-        Model model = null;
+        Model model;
 
         try {
             String[] result = s.split(" ");

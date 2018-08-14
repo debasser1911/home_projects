@@ -8,9 +8,19 @@ public class ResultParserImpl implements ResultParser {
         int result = 0;
 
 
-        switch (a.getOperator()){
+        switch (a.getOperator()) {
             case "+":
                 result = Integer.parseInt(a.getOperandFirst()) + Integer.parseInt(a.getOperandSecond());
+                break;
+            case "-":
+                result = Integer.parseInt(a.getOperandFirst()) - Integer.parseInt(a.getOperandSecond());
+                break;
+            case "*":
+                result = Integer.parseInt(a.getOperandFirst()) * Integer.parseInt(a.getOperandSecond());
+                break;
+            case "/":
+                result = Integer.parseInt(a.getOperandFirst()) / Integer.parseInt(a.getOperandSecond());
+                break;
 
         }
 

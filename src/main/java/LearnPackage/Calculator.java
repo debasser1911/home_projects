@@ -2,8 +2,8 @@ package LearnPackage;
 
 public class Calculator implements Parser<String, Integer>{
 
-    ModelParser modelParser = new ModelParserImpl();
-    ResultParser resultParser = new ResultParserImpl();
+    private ModelParser modelParser = new ModelParserImpl();
+    private ResultParser resultParser = new ResultParserImpl();
 
 
 

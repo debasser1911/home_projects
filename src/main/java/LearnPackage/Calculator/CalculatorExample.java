@@ -6,7 +6,7 @@ public class CalculatorExample {
         String input = "244 + 387";
         String input2 = "244 - 387";
         String input3 = "244 * 387";
-        String input4 = "244 / 387";
+        String input4 = "12 / 3";
 
         Calculator calc = new Calculator();
         int result = calc.calculate(input);
